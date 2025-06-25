@@ -1,6 +1,19 @@
 @import "tailwindcss";
 
 :root {
+  /* VARIABLES DE COLORES */
+  --color-text: #9CA3AF;
+  --color-text2: #D1D5DB;
+  --color-title: #FFFFFF;
+  --color-card-hability: #FF0B0B;
+  --color-card-hability-flying: #A5B4FC;
+  --color-card-hability-normal: #9CA3AF;
+  --color-card-hability-water: #1E60D3;
+  --color-statistics-medium: #EAB308;
+  --color-statistics-good: #38CC2B;
+  --color-card-hability-dark: #374151;
+  --color-placeholder: #7A8089;
+
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
