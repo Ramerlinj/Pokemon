@@ -2,6 +2,7 @@
 import { useState } from "react";
 import usePokemon  from "../hooks/usePokemon"
 import PokemonDetail from "./PokemonDetail";
+import PokemonCard from "./PokemonCard";
 
 const PokemonList = () => {
 
@@ -46,7 +47,7 @@ const PokemonList = () => {
     const visible = filtered.slice(0, visibleCount);
 
     // Calcular el índice del Pokémon seleccionado en la lista visible
-    const currentIndex = visible.findIndex(p => p.id === selectedPokemon?.id);
+    //const currentIndex = visible.findIndex(p => p.id === selectedPokemon?.id);
 
     // Funciones de navegación por ID global
     const handleNext = () => {
@@ -63,13 +64,16 @@ const PokemonList = () => {
 
     return (
         <>
+        <div className="flex flex-col items-center mt-10">
+        <h1 className="text-6xl font-bold mt-15 text-center" >Pokémon</h1>
+        <label className="text-text2 font-semibold"> Ingrese el nombre del Pokémon o pókedex
             <input type="text"
             placeholder="bulbasaur or 1"
             value={search}
             onChange={handleInput}
-            className="border-1"
-            
+            className="border-text border-1 bg-Badge-hability text-placeholder rounded-md p-2 flex justify-center w-5xl mt-2 mb-15"
             />
+            </label>
 
             {loading && (
                 <h2>Cargando</h2>
@@ -78,27 +82,24 @@ const PokemonList = () => {
                 <h2>No se ha encontrado el pokemon</h2>
             )}
 
+              </div>
            
-            <div className="grid grid-cols-5">
+            <div className="grid grid-cols-4">
                 {visible.map((pokemon) => (
                     <div key={pokemon.id} className="flex flex-col items-center p-2">
-                        <p className="cursor-pointer" onClick={() => handlePokemonClick(pokemon)}>{pokemon.name}</p>
-                        <img 
-                          src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`} 
-                          alt={pokemon.name}
-                          className="cursor-pointer"
-                          onClick={() => handlePokemonClick(pokemon)}
-                        />
+                       <PokemonCard pokemon={pokemon} handlePokemonClick={handlePokemonClick} />
                     </div>
                         ))}
 
                    {filtered.length ===0 && ( <p>No se encontraron Pokémon</p>)}    
                 </div>
+
+                <div className="">
                     <button className="bg-amber-100 text-black w-10" onClick={handleClick}>Ver más</button>
 
             {selectedPokemon && (
               <PokemonDetail 
-                pokemon={selectedPokemon} 
+              pokemon={selectedPokemon} 
                 onClose={handleCloseDetail} 
                 onNext={handleNext}
                 onPrev={handlePrev}
@@ -112,6 +113,7 @@ const PokemonList = () => {
             {detailError && (
               <div className="modal-overlay"><div className="modal-content"><h2>{detailError}</h2><button onClick={handleCloseDetail}>Cerrar</button></div></div>
             )}
+            </div>
         </>
   );
 };
