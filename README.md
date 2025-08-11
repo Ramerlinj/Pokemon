@@ -47,7 +47,6 @@ Si quieres mejorar este proyecto, ¡tus contribuciones son bienvenidas\! Puedes 
 3.  Realiza tus cambios y haz **"commit"** de ellos (`git commit -m 'feat: añade nueva funcionalidad'`).
 4.  Sube tus cambios a tu repositorio (`git push origin feature/nueva-funcionalidad`).
 5.  Abre un **"Pull Request"**.
-6.  
 -----
 
 ## 📧 Contacto
