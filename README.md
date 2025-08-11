@@ -1,6 +1,3 @@
-Aquí tienes un ejemplo de archivo README para el proyecto de Pokémon que has compartido. Lo he estructurado para que sea fácil de leer y para que proporcione la información más relevante a cualquier persona que visite el repositorio.
-
------
 
 # 🎮 Pokémon
 
