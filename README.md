@@ -1,12 +1,58 @@
-# React + Vite
+Aquí tienes un ejemplo de archivo README para el proyecto de Pokémon que has compartido. Lo he estructurado para que sea fácil de leer y para que proporcione la información más relevante a cualquier persona que visite el repositorio.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+-----
 
-Currently, two official plugins are available:
+# 🎮 Pokémon
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+¡Bienvenido al proyecto Pokémon\! Este repositorio contiene una aplicación de escritorio simple para gestionar una colección de Pokémon.
 
-## Expanding the ESLint configuration
+-----
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Características
+
+Este proyecto te permite:
+
+  * **Visualizar** una lista de tus Pokémon capturados.
+  * **Añadir** nuevos Pokémon a tu colección.
+  * **Eliminar** Pokémon que ya no quieras tener.
+  * **Buscar** Pokémon específicos por su nombre o número.
+
+-----
+
+## 💻 Requisitos
+
+Para poder ejecutar esta aplicación, necesitas tener instalado lo siguiente:
+
+  * **Java Development Kit (JDK)** versión 8 o superior.
+  * Un **entorno de desarrollo integrado (IDE)** como IntelliJ IDEA, Eclipse o NetBeans.
+
+-----
+
+## 🛠️ Instalación y Uso
+
+Sigue estos pasos para poner en marcha el proyecto en tu máquina local:
+
+1.  **Clona el repositorio** en tu equipo usando el siguiente comando en la terminal:
+    ```bash
+    git clone https://github.com/Ramerlinj/Pokemon.git
+    ```
+2.  **Abre el proyecto** en tu IDE favorito.
+3.  **Compila y ejecuta** el archivo `Main.java` (o el archivo principal que inicie la aplicación).
+
+-----
+
+## 🤝 Contribuciones
+
+Si quieres mejorar este proyecto, ¡tus contribuciones son bienvenidas\! Puedes hacerlo de las siguientes maneras:
+
+1.  Haz un **"fork"** del repositorio.
+2.  Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+3.  Realiza tus cambios y haz **"commit"** de ellos (`git commit -m 'feat: añade nueva funcionalidad'`).
+4.  Sube tus cambios a tu repositorio (`git push origin feature/nueva-funcionalidad`).
+5.  Abre un **"Pull Request"**.
+6.  
+-----
+
+## 📧 Contacto
+
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de mi perfil de GitHub.
