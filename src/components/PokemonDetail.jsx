@@ -31,7 +31,7 @@ const STAT_LABELS = {
   'total': 'Total'
 };
 
-const PokemonDetail = ({ pokemon, onClose, onNext, onPrev, pokemonList = [], currentIndex = 0 }) => {
+const PokemonDetail = ({ pokemon, onClose, onNext, onPrev }) => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [animationDirection, setAnimationDirection] = useState('');
 
@@ -130,7 +130,7 @@ const PokemonDetail = ({ pokemon, onClose, onNext, onPrev, pokemonList = [], cur
         >
           ×
         </button>
-
+ 
         <div className="flex flex-row gap-10 max-md:flex-col max-md:gap-5">
           
           <div className="bg-[var(--color-subcard)] rounded-xl p-6 min-w-[260px] flex flex-col items-center flex-1">

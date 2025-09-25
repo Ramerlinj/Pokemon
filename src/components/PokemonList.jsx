@@ -94,8 +94,8 @@ const PokemonList = () => {
                    {filtered.length ===0 && ( <p>No se encontraron Pokémon</p>)}    
                 </div>
 
-                <div className="">
-                    <button className="bg-amber-100 text-black w-10" onClick={handleClick}>Ver más</button>
+                <div className="m-16">
+                    <button className="bg-Badge-hability font-semibold   px-4 py-2 rounded-xl cursor-pointer hover:bg-Badge-hability/70 transition-all duration-200" onClick={handleClick}>Ver más</button>
 
             {selectedPokemon && (
               <PokemonDetail 
